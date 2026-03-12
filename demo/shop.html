@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — mindform Active</title>
+  <meta name="description" content="Browse the mindform Active collection. Premium tops, leggings, sets, and accessories." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ───────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">mindform</a>
+        <ul class="navbar__nav">
+          <li><a href="shop.html" class="navbar__link active">Shop</a></li>
+          <li><a href="shop.html" class="navbar__link">Collections</a></li>
+          <li><a href="about.html" class="navbar__link">About</a></li>
+          <li><a href="testimonials.html" class="navbar__link">Reviews</a></li>
+          <li><a href="faq.html" class="navbar__link">FAQ</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <button class="navbar__burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <button class="mobile-nav__close">✕</button>
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="shop.html" class="mobile-nav__link">Shop</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="testimonials.html" class="mobile-nav__link">Reviews</a>
+    <a href="faq.html" class="mobile-nav__link">FAQ</a>
+  </nav>
+
+  <!-- ── Page Hero ─────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="label" data-reveal data-reveal="fade">mindform Active</span>
+      <h1 class="display-lg mt-16" data-reveal>The Collection</h1>
+      <p class="body-lg mt-16 muted" style="max-width:440px;margin-left:auto;margin-right:auto;" data-reveal data-delay="2">
+        Premium pieces for everyday movement. Crafted with care, worn with confidence.
+      </p>
+    </div>
+  </div>
+
+  <!-- ── Shop Body ─────────────────────────────────── -->
+  <section class="section section--cream pt-0">
+    <div class="container">
+
+      <!-- Filter tabs (mobile-friendly) -->
+      <div class="filter-tabs" style="margin-top:48px;">
+        <button class="filter-tab active">All</button>
+        <button class="filter-tab">Tops</button>
+        <button class="filter-tab">Leggings</button>
+        <button class="filter-tab">Sets</button>
+        <button class="filter-tab">Accessories</button>
+      </div>
+
+      <div class="shop-layout">
+
+        <!-- Sidebar Filters (desktop) -->
+        <aside class="shop-filters">
+          <div class="shop-filter-group">
+            <h4>Price</h4>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="p1" />
+              <label for="p1">Under $60</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="p2" checked />
+              <label for="p2">$60 – $100</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="p3" />
+              <label for="p3">$100 – $150</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="p4" />
+              <label for="p4">$150+</label>
+            </div>
+          </div>
+          <div class="shop-filter-group">
+            <h4>Size</h4>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="s1" />
+              <label for="s1">XS</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="s2" checked />
+              <label for="s2">S</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="s3" checked />
+              <label for="s3">M</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="s4" />
+              <label for="s4">L</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="s5" />
+              <label for="s5">XL</label>
+            </div>
+          </div>
+          <div class="shop-filter-group">
+            <h4>Color</h4>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="c1" checked />
+              <label for="c1">Cream</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="c2" />
+              <label for="c2">Sand</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="c3" checked />
+              <label for="c3">Charcoal</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="c4" />
+              <label for="c4">Dusty Rose</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="c5" />
+              <label for="c5">Sage</label>
+            </div>
+          </div>
+          <div class="shop-filter-group">
+            <h4>Activity</h4>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="a1" checked />
+              <label for="a1">Yoga</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="a2" />
+              <label for="a2">Running</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="a3" checked />
+              <label for="a3">Training</label>
+            </div>
+            <div class="shop-filter-option">
+              <input type="checkbox" id="a4" />
+              <label for="a4">Everyday</label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div>
+          <div class="shop-header-bar">
+            <p>Showing 12 products</p>
+            <div class="shop-sort">
+              <select aria-label="Sort products">
+                <option>Featured</option>
+                <option>Newest</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Best Selling</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="product-grid product-grid--3">
+            <a href="product.html" class="product-card" data-reveal data-delay="1">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1617952236311-f0c9a4a9c8d6?auto=format&fit=crop&w=600&q=80" alt="High Waist Sculpt Legging" loading="lazy" />
+                <span class="product-card__badge">New</span>
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Leggings</p>
+                <h3 class="product-card__name">High Waist Sculpt Legging</h3>
+                <p class="product-card__price">$88</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="2">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1551218808-5f2eff74e4b8?auto=format&fit=crop&w=600&q=80" alt="Studio Crop Top" loading="lazy" />
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Tops</p>
+                <h3 class="product-card__name">Studio Crop Top</h3>
+                <p class="product-card__price">$54</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="3">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=600&q=80" alt="Motion Set" loading="lazy" />
+                <span class="product-card__badge">Best Seller</span>
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Sets</p>
+                <h3 class="product-card__name">Motion Set</h3>
+                <p class="product-card__price">$136</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="1">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80" alt="Essential Ribbed Set" loading="lazy" />
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Sets</p>
+                <h3 class="product-card__name">Essential Ribbed Set</h3>
+                <p class="product-card__price">$118</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="2">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1518611012144-d8b0bdd8a4eb?auto=format&fit=crop&w=600&q=80" alt="Flow Yoga Pant" loading="lazy" />
+                <span class="product-card__badge">New</span>
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Leggings</p>
+                <h3 class="product-card__name">Flow Yoga Pant</h3>
+                <p class="product-card__price">$76</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="3">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=600&q=80" alt="Seamless Sports Bra" loading="lazy" />
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Tops</p>
+                <h3 class="product-card__name">Seamless Sports Bra</h3>
+                <p class="product-card__price">$52</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="1">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=600&q=80" alt="Contour Shorts" loading="lazy" />
+                <span class="product-card__badge sale">Sale</span>
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Bottoms</p>
+                <h3 class="product-card__name">Contour Shorts</h3>
+                <p class="product-card__price"><span class="original">$68</span>$48</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="2">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=600&q=80" alt="Everyday Relaxed Top" loading="lazy" />
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Tops</p>
+                <h3 class="product-card__name">Everyday Relaxed Top</h3>
+                <p class="product-card__price">$58</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="3">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1593079831268-d401b1f81b93?auto=format&fit=crop&w=600&q=80" alt="Sculpt Long Sleeve" loading="lazy" />
+                <span class="product-card__badge">New</span>
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Tops</p>
+                <h3 class="product-card__name">Sculpt Long Sleeve</h3>
+                <p class="product-card__price">$72</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="1">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=600&q=80" alt="Minimal Tote" loading="lazy" />
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Accessories</p>
+                <h3 class="product-card__name">Minimal Canvas Tote</h3>
+                <p class="product-card__price">$38</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="2">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Define Set" loading="lazy" />
+                <span class="product-card__badge">Best Seller</span>
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Sets</p>
+                <h3 class="product-card__name">Define Set</h3>
+                <p class="product-card__price">$142</p>
+              </div>
+            </a>
+            <a href="product.html" class="product-card" data-reveal data-delay="3">
+              <div class="product-card__media">
+                <img src="https://images.unsplash.com/photo-1548690312-5e7ab86f6e3b?auto=format&fit=crop&w=600&q=80" alt="Recovery Legging" loading="lazy" />
+                <button class="product-card__quick">Quick Add</button>
+              </div>
+              <div class="product-card__info">
+                <p class="product-card__category">Leggings</p>
+                <h3 class="product-card__name">Recovery Legging</h3>
+                <p class="product-card__price">$82</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Load More -->
+          <div class="text-center mt-48" data-reveal>
+            <button class="btn btn-secondary">Load More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">mindform</div>
+          <p class="footer__tagline">Premium activewear designed for wellness, built for movement.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Shop</h4>
+          <ul class="footer__links">
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">Tops</a></li>
+            <li><a href="shop.html">Leggings</a></li>
+            <li><a href="shop.html">Sets</a></li>
+            <li><a href="shop.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <ul class="footer__links">
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 mindform Active. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <button class="chatbot-fab" aria-label="Open chat">
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <div class="chatbot-window">
+    <div class="chatbot-head">
+      <div class="chatbot-head-left">
+        <div class="chatbot-avatar">mf</div>
+        <div><h4>mindform Assistant</h4><p>Online now</p></div>
+      </div>
+      <button class="chatbot-head-close">✕</button>
+    </div>
+    <div class="chatbot-messages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-bubble">Hi! Looking for something specific? I can help you find the perfect piece.</div>
+      </div>
+    </div>
+    <div class="chatbot-chips">
+      <button class="chip">Sizing help</button>
+      <button class="chip">Shipping info</button>
+      <button class="chip">Returns</button>
+    </div>
+    <div class="chatbot-input-row">
+      <input type="text" placeholder="Ask me anything..." />
+      <button class="chatbot-send"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

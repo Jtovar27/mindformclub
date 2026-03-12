@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mindform Active — Premium Activewear</title>
+  <meta name="description" content="Elevate your movement. Premium activewear crafted for those who live with intention." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ───────────────────────────────────── -->
+  <nav class="navbar navbar--on-dark" id="navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">mindform</a>
+        <ul class="navbar__nav">
+          <li><a href="shop.html" class="navbar__link">Shop</a></li>
+          <li><a href="shop.html" class="navbar__link">Collections</a></li>
+          <li><a href="about.html" class="navbar__link">About</a></li>
+          <li><a href="testimonials.html" class="navbar__link">Reviews</a></li>
+          <li><a href="faq.html" class="navbar__link">FAQ</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <svg class="nav-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg class="nav-icon" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <button class="navbar__burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <button class="mobile-nav__close" aria-label="Close">✕</button>
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="shop.html" class="mobile-nav__link">Shop</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="testimonials.html" class="mobile-nav__link">Reviews</a>
+    <a href="faq.html" class="mobile-nav__link">FAQ</a>
+    <div class="nav-actions mt-32">
+      <a href="#">Account</a>
+      <a href="#">Bag (0)</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ─────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1920&q=85"
+        alt="Woman in premium activewear"
+        loading="eager"
+      />
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span>New Collection — Spring 2025</span>
+        </div>
+        <h1 class="display-xl hero__title">
+          Wear it.<br>
+          <em>Feel it.</em>
+        </h1>
+        <p class="hero__sub">
+          Premium activewear for those who move with purpose. Designed for wellness, built for life.
+        </p>
+        <div class="hero__actions">
+          <a href="shop.html" class="btn btn-light">Shop Now</a>
+          <a href="shop.html" class="btn btn-ghost-light">Explore Collection</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Marquee ───────────────────────────────────── -->
+  <div class="marquee">
+    <div class="marquee__track" aria-hidden="true">
+      <div class="marquee__group">
+        <span class="marquee__item">Quality</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Detail</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Wellness</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Movement</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Confidence</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Elevated Style</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Self-Love</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Modern Activewear</span>
+        <span class="marquee__sep"></span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span class="marquee__item">Quality</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Detail</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Wellness</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Movement</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Confidence</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Elevated Style</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Self-Love</span>
+        <span class="marquee__sep"></span>
+        <span class="marquee__item">Modern Activewear</span>
+        <span class="marquee__sep"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Categories ───────────────────────────────── -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="label">Shop by Category</span>
+        <h2 class="display-md">Find Your Form</h2>
+      </div>
+      <div class="category-grid">
+        <a href="shop.html" class="cat-card" data-reveal data-delay="1">
+          <img
+            src="https://images.unsplash.com/photo-1518611012144-d8b0bdd8a4eb?auto=format&fit=crop&w=600&q=80"
+            alt="Tops"
+            loading="lazy"
+          />
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__content">
+            <h3 class="cat-card__title">Tops</h3>
+            <span class="cat-card__link">Shop now</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card" data-reveal data-delay="2">
+          <img
+            src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=600&q=80"
+            alt="Leggings"
+            loading="lazy"
+          />
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__content">
+            <h3 class="cat-card__title">Leggings</h3>
+            <span class="cat-card__link">Shop now</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card" data-reveal data-delay="3">
+          <img
+            src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=600&q=80"
+            alt="Sets"
+            loading="lazy"
+          />
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__content">
+            <h3 class="cat-card__title">Sets</h3>
+            <span class="cat-card__link">Shop now</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card" data-reveal data-delay="4">
+          <img
+            src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=600&q=80"
+            alt="Accessories"
+            loading="lazy"
+          />
+          <div class="cat-card__overlay"></div>
+          <div class="cat-card__content">
+            <h3 class="cat-card__title">Accessories</h3>
+            <span class="cat-card__link">Shop now</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Products ─────────────────────────── -->
+  <section class="section section--off">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="label">Featured</span>
+        <h2 class="display-md">The Collection</h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="product-grid product-grid--4">
+        <a href="product.html" class="product-card" data-reveal data-delay="1">
+          <div class="product-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1617952236311-f0c9a4a9c8d6?auto=format&fit=crop&w=600&q=80"
+              alt="High Waist Sculpt Legging"
+              loading="lazy"
+            />
+            <span class="product-card__badge">New</span>
+            <button class="product-card__quick">Quick Add</button>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Leggings</p>
+            <h3 class="product-card__name">High Waist Sculpt Legging</h3>
+            <p class="product-card__price">$88</p>
+          </div>
+        </a>
+        <a href="product.html" class="product-card" data-reveal data-delay="2">
+          <div class="product-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1551218808-5f2eff74e4b8?auto=format&fit=crop&w=600&q=80"
+              alt="Studio Crop Top"
+              loading="lazy"
+            />
+            <button class="product-card__quick">Quick Add</button>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Tops</p>
+            <h3 class="product-card__name">Studio Crop Top</h3>
+            <p class="product-card__price">$54</p>
+          </div>
+        </a>
+        <a href="product.html" class="product-card" data-reveal data-delay="3">
+          <div class="product-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&w=600&q=80"
+              alt="Motion Set"
+              loading="lazy"
+            />
+            <span class="product-card__badge">Best Seller</span>
+            <button class="product-card__quick">Quick Add</button>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Sets</p>
+            <h3 class="product-card__name">Motion Set</h3>
+            <p class="product-card__price">$136</p>
+          </div>
+        </a>
+        <a href="product.html" class="product-card" data-reveal data-delay="4">
+          <div class="product-card__media">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
+              alt="Essential Ribbed Set"
+              loading="lazy"
+            />
+            <button class="product-card__quick">Quick Add</button>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Sets</p>
+            <h3 class="product-card__name">Essential Ribbed Set</h3>
+            <p class="product-card__price">$118</p>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-48" data-reveal>
+        <a href="shop.html" class="btn btn-secondary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Brand Story Split ──────────────────────────── -->
+  <div class="brand-split">
+    <div class="brand-split__image">
+      <img
+        src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=800&q=80"
+        alt="mindform lifestyle"
+        loading="lazy"
+      />
+    </div>
+    <div class="brand-split__content">
+      <span class="label" data-reveal data-reveal="fade">Our Philosophy</span>
+      <h2 class="display-md" data-reveal>More than activewear.<br><em>It's how you move through life.</em></h2>
+      <p data-reveal data-delay="2">
+        mindform was built for women and men who understand that how you feel in your clothes shapes how you move through the world. Every stitch, every fabric, every silhouette is designed with one intention — to make you feel exactly like yourself: strong, comfortable, and effortlessly elevated.
+      </p>
+      <a href="about.html" class="btn btn-light" data-reveal data-delay="3">Our Story</a>
+    </div>
+  </div>
+
+  <!-- ── Why mindform ───────────────────────────────── -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="label">Why mindform</span>
+        <h2 class="display-md">The Difference You Feel</h2>
+      </div>
+      <div class="features-grid" data-reveal>
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h3>Uncompromising Quality</h3>
+          <p>We source only premium fabrics that move with you — soft, breathable, and built to last through every session and every season.</p>
+        </div>
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <h3>Intentional Design</h3>
+          <p>Every detail — seam placement, waistband construction, compression zoning — is considered. Nothing accidental, everything purposeful.</p>
+        </div>
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <h3>Feel-Good First</h3>
+          <p>We design for comfort that translates to confidence. When you feel good in what you wear, you move differently — and that changes everything.</p>
+        </div>
+        <div class="feature-item">
+          <svg class="feature-icon" viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+          <h3>Elevated Everyday</h3>
+          <p>From early morning movement to the rest of your day — mindform is built to take you through it all without compromise.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Lifestyle Fullscreen ────────────────────────── -->
+  <section class="fullscreen-cta">
+    <div class="fullscreen-cta__bg">
+      <img
+        src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1920&q=80"
+        alt="mindform lifestyle"
+        loading="lazy"
+      />
+    </div>
+    <div class="fullscreen-cta__content">
+      <span class="label" data-reveal data-reveal="fade">The mindform Way</span>
+      <h2 class="display-lg" data-reveal>
+        Designed for<br><em>your best day.</em>
+      </h2>
+      <p data-reveal data-delay="2">
+        Wear pieces that work as hard as you do — and look as good as you feel. This is activewear with intention.
+      </p>
+      <div class="flex flex-center gap-16" data-reveal data-delay="3">
+        <a href="shop.html" class="btn btn-light">Shop the Collection</a>
+        <a href="about.html" class="btn btn-ghost-light">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials Preview ─────────────────────── -->
+  <section class="section section--off">
+    <div class="container">
+      <div class="section-header section-header--center" data-reveal>
+        <span class="label">Customer Love</span>
+        <h2 class="display-md">What They're Saying</h2>
+        <div class="divider divider--center"></div>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card" data-reveal data-delay="1">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <blockquote>"The quality is unlike anything I've found at this price. These leggings feel like a second skin — I ordered three more colors."</blockquote>
+          <cite>— Sofia R., New York</cite>
+        </div>
+        <div class="testimonial-card" data-reveal data-delay="2">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <blockquote>"I wear mindform from morning yoga to errands and still feel put together. The fit is just perfect — structured but not tight."</blockquote>
+          <cite>— Megan T., Los Angeles</cite>
+        </div>
+        <div class="testimonial-card" data-reveal data-delay="3">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <blockquote>"Finally a brand that takes activewear seriously. The attention to detail — the waistband, the stitching — it shows in every piece."</blockquote>
+          <cite>— Camille D., Miami</cite>
+        </div>
+      </div>
+      <div class="text-center mt-48" data-reveal>
+        <a href="testimonials.html" class="btn btn-secondary">Read All Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Newsletter ─────────────────────────────────── -->
+  <section class="newsletter-section">
+    <div class="container">
+      <span class="label" data-reveal data-reveal="fade">Stay Connected</span>
+      <h2 class="display-md" data-reveal>Join the mindform Community</h2>
+      <p data-reveal data-delay="2">
+        Be the first to know about new drops, exclusive offers, and wellness content.
+      </p>
+      <form class="newsletter-form" data-reveal data-delay="3">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">mindform</div>
+          <p class="footer__tagline">Premium activewear designed for wellness, built for movement. Made for those who choose to live with intention.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TikTok">TK</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Shop</h4>
+          <ul class="footer__links">
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">Tops</a></li>
+            <li><a href="shop.html">Leggings</a></li>
+            <li><a href="shop.html">Sets</a></li>
+            <li><a href="shop.html">Accessories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <ul class="footer__links">
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 mindform Active. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Chatbot ─────────────────────────────────────── -->
+  <button class="chatbot-fab" aria-label="Open chat">
+    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <div class="chatbot-window">
+    <div class="chatbot-head">
+      <div class="chatbot-head-left">
+        <div class="chatbot-avatar">mf</div>
+        <div>
+          <h4>mindform Assistant</h4>
+          <p>Online now</p>
+        </div>
+      </div>
+      <button class="chatbot-head-close" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chatbot-messages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-bubble">Hi, I'm mindform Active's virtual assistant. I can help you explore products, collections, and sizing.</div>
+      </div>
+    </div>
+    <div class="chatbot-chips">
+      <button class="chip">Sizing help</button>
+      <button class="chip">Shipping info</button>
+      <button class="chip">Returns</button>
+      <button class="chip">Browse collections</button>
+    </div>
+    <div class="chatbot-input-row">
+      <input type="text" placeholder="Ask me anything..." />
+      <button class="chatbot-send" aria-label="Send">
+        <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
