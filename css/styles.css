@@ -2,7 +2,7 @@
    MINDFORM ACTIVE — Design System v1.0
    ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;700&display=swap');
 
 /* ─── Tokens ─────────────────────────────────────── */
 :root {
@@ -193,7 +193,7 @@ button { font-family: var(--font-body); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  padding: 8px 0;
+  padding: 18px 0;
   background: #ffffff;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -211,12 +211,18 @@ button { font-family: var(--font-body); }
   display: flex;
   align-items: center;
   line-height: 1;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
 }
-.navbar__logo-img {
-  height: 85px;
-  width: auto;
-  display: block;
-  object-fit: contain;
+.navbar__logo-mind {
+  font-weight: 700;
+}
+.navbar__logo-rest {
+  font-weight: 300;
 }
 /* Footer logo text */
 .footer__logo-text {
