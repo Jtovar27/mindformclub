@@ -2,7 +2,7 @@
    MINDFORM ACTIVE — Design System v1.0
    ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;700&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap');
 
 /* ─── Tokens ─────────────────────────────────────── */
 :root {
@@ -241,6 +241,7 @@ button { font-family: var(--font-body); }
   font-weight: 700;
 }
 .navbar__logo-rest {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 /* Footer logo text */
@@ -261,6 +262,7 @@ button { font-family: var(--font-body); }
   font-weight: 700;
 }
 .footer__logo-text .logo-rest {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 .navbar__nav {
