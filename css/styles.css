@@ -242,7 +242,7 @@ button { font-family: var(--font-body); }
 }
 .navbar__logo-rest {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 /* Footer logo text */
 .footer__logo-text {
@@ -263,7 +263,7 @@ button { font-family: var(--font-body); }
 }
 .footer__logo-text .logo-rest {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 }
 .navbar__nav {
   display: flex;
