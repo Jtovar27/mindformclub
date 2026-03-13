@@ -6,11 +6,11 @@
 
 /* ─── Tokens ─────────────────────────────────────── */
 :root {
-  --cream:    #F0EDE6;
-  --beige:    #D7D1C1;
-  --charcoal: #231F20;
+  --cream:    #FFFFFF;
+  --beige:    #D0D0D0;
+  --charcoal: #000000;
   --white:    #FFFFFF;
-  --off:      #F8F5EF;
+  --off:      #F5F5F5;
 
   --font-display: 'Cormorant Garamond', serif;
   --font-body:    'Inter', sans-serif;
@@ -31,7 +31,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--font-body);
-  background: var(--cream);
+  background: #FFFFFF;
   color: var(--charcoal);
   line-height: 1.6;
   font-weight: 300;
@@ -165,7 +165,7 @@ button { font-family: var(--font-body); }
 .btn-ghost-light {
   background: transparent;
   color: var(--cream);
-  border-color: rgba(240,237,230,0.6);
+  border-color: rgba(255,255,255,0.6);
 }
 .btn-ghost-light:hover {
   background: var(--cream);
@@ -194,10 +194,10 @@ button { font-family: var(--font-body); }
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 16px 0;
-  background: rgba(255, 255, 255, 0.97);
+  background: #ffffff;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(215, 209, 193, 0.4);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.4);
   color: var(--charcoal);
 }
 
@@ -209,26 +209,14 @@ button { font-family: var(--font-body); }
 .navbar__logo {
   flex-shrink: 0;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   line-height: 1;
 }
-.navbar__logo-mind {
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  line-height: 1;
-  color: var(--charcoal);
-  transition: color var(--dur) var(--ease);
-}
-.navbar__logo-form {
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1;
-  color: var(--charcoal);
-  transition: color var(--dur) var(--ease);
+.navbar__logo-img {
+  height: 100px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 /* Footer logo text */
 .footer__logo-text {
@@ -376,7 +364,7 @@ button { font-family: var(--font-body); }
   grid-template-columns: 2.2fr 1fr 1fr 1fr;
   gap: var(--gap-xl);
   padding-bottom: 56px;
-  border-bottom: 1px solid rgba(240, 237, 230, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .footer__logo {
   font-family: var(--font-display);
@@ -399,7 +387,7 @@ button { font-family: var(--font-body); }
 }
 .footer__social a {
   width: 36px; height: 36px;
-  border: 1px solid rgba(240,237,230,0.15);
+  border: 1px solid rgba(255,255,255,0.15);
   display: flex; align-items: center; justify-content: center;
   transition: border-color var(--dur), background var(--dur);
   font-size: 0.65rem;
@@ -409,7 +397,7 @@ button { font-family: var(--font-body); }
 }
 .footer__social a:hover {
   border-color: var(--cream);
-  background: rgba(240,237,230,0.08);
+  background: rgba(255,255,255,0.08);
   opacity: 1;
 }
 .footer__col-title {
@@ -474,10 +462,10 @@ button { font-family: var(--font-body); }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(35,31,32,0.1) 0%,
-    rgba(35,31,32,0.05) 30%,
-    rgba(35,31,32,0.45) 75%,
-    rgba(35,31,32,0.7) 100%
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.05) 30%,
+    rgba(0,0,0,0.45) 75%,
+    rgba(0,0,0,0.7) 100%
   );
 }
 .hero__content {
@@ -504,7 +492,7 @@ button { font-family: var(--font-body); }
   content: '';
   display: block;
   width: 32px; height: 1px;
-  background: rgba(240,237,230,0.5);
+  background: rgba(255,255,255,0.5);
 }
 .hero__title { margin-bottom: 24px; }
 .hero__sub {
@@ -565,8 +553,8 @@ button { font-family: var(--font-body); }
   background: var(--charcoal);
   color: var(--cream);
   padding: 18px 0;
-  border-top: 1px solid rgba(240,237,230,0.06);
-  border-bottom: 1px solid rgba(240,237,230,0.06);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .marquee__track {
   display: inline-flex;
@@ -626,7 +614,7 @@ button { font-family: var(--font-body); }
   background: linear-gradient(
     to bottom,
     transparent 40%,
-    rgba(35,31,32,0.65) 100%
+    rgba(0,0,0,0.65) 100%
   );
 }
 .cat-card__content {
@@ -688,7 +676,7 @@ button { font-family: var(--font-body); }
   z-index: 1;
 }
 .product-card__badge--sale {
-  background: #8B7355;
+  background: #555555;
 }
 .product-card__quick {
   position: absolute;
@@ -861,7 +849,7 @@ button { font-family: var(--font-body); }
 .testimonial-stars {
   display: flex;
   gap: 4px;
-  color: #C4A882;
+  color: #888888;
   font-size: 0.8rem;
   letter-spacing: 2px;
 }
@@ -907,8 +895,8 @@ button { font-family: var(--font-body); }
 .newsletter-form input {
   flex: 1;
   padding: 15px 20px;
-  border: 1px solid rgba(240,237,230,0.2);
-  background: rgba(240,237,230,0.06);
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.06);
   color: var(--cream);
   font-family: var(--font-body);
   font-size: 0.82rem;
@@ -917,7 +905,7 @@ button { font-family: var(--font-body); }
   transition: border-color var(--dur);
 }
 .newsletter-form input::placeholder { opacity: 0.4; }
-.newsletter-form input:focus { border-color: rgba(240,237,230,0.5); }
+.newsletter-form input:focus { border-color: rgba(255,255,255,0.5); }
 .newsletter-form button {
   padding: 15px 28px;
   background: var(--cream);
@@ -1345,12 +1333,12 @@ button { font-family: var(--font-body); }
   border: none;
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 6px 32px rgba(35,31,32,0.22);
+  box-shadow: 0 6px 32px rgba(0,0,0,0.22);
   transition: transform var(--dur), box-shadow var(--dur);
 }
 .chatbot-fab:hover {
   transform: scale(1.06);
-  box-shadow: 0 10px 40px rgba(35,31,32,0.28);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.28);
 }
 .chatbot-fab svg {
   width: 22px; height: 22px;
@@ -1365,7 +1353,7 @@ button { font-family: var(--font-body); }
   width: 348px;
   background: var(--white);
   border: 1px solid var(--beige);
-  box-shadow: 0 20px 60px rgba(35,31,32,0.14);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.14);
   display: flex;
   flex-direction: column;
   transform: translateY(16px) scale(0.97);
