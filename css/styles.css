@@ -2,7 +2,7 @@
    MINDFORM ACTIVE — Design System v1.0
    ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;700&family=Montserrat:wght@700&display=swap');
 
 /* ─── Tokens ─────────────────────────────────────── */
 :root {
@@ -188,10 +188,28 @@ button { font-family: var(--font-body); }
 .section-header--center { text-align: center; }
 .section-header .label { display: block; margin-bottom: 14px; opacity: 0.45; }
 
+/* ─── Announcement Bar ────────────────────────────── */
+.announcement-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 101;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
 /* ─── Navbar ──────────────────────────────────────── */
 .navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 36px; left: 0; right: 0;
   z-index: 100;
   padding: 18px 0;
   background: #ffffff;
@@ -219,6 +237,7 @@ button { font-family: var(--font-body); }
   text-decoration: none;
 }
 .navbar__logo-mind {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 .navbar__logo-rest {
@@ -227,26 +246,22 @@ button { font-family: var(--font-body); }
 /* Footer logo text */
 .footer__logo-text {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0;
   margin-bottom: 16px;
-}
-.footer__logo-text .logo-main {
-  font-family: var(--font-display);
-  font-size: 1.65rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  line-height: 1;
-  color: var(--cream);
-}
-.footer__logo-text .logo-sub {
-  font-family: var(--font-body);
-  font-size: 0.48rem;
-  font-weight: 500;
-  letter-spacing: 0.32em;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--cream);
-  opacity: 0.45;
+}
+.footer__logo-text .logo-mind {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.footer__logo-text .logo-rest {
+  font-weight: 300;
 }
 .navbar__nav {
   display: flex;
@@ -547,7 +562,7 @@ button { font-family: var(--font-body); }
 
 /* Page hero (inner pages) */
 .page-hero {
-  padding: 160px 0 80px;
+  padding: 198px 0 80px;
   background: var(--charcoal);
   color: var(--cream);
   text-align: center;
@@ -1023,7 +1038,7 @@ button { font-family: var(--font-body); }
   grid-template-columns: 1fr 1fr;
   gap: var(--gap-xl);
   align-items: start;
-  padding-top: 120px;
+  padding-top: 158px;
 }
 .product-gallery {
   display: grid;
