@@ -292,6 +292,7 @@ button { font-family: var(--font-body); }
   border: none;
   cursor: pointer;
   padding: 4px;
+  color: #000000;
 }
 .navbar__burger span {
   display: block;
